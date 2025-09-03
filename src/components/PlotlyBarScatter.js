@@ -10,7 +10,7 @@ const BarScatter = () => {
     const [geoData, setGeoData] = useState(null);
 
     useEffect(() => {
-        fetch(import.meta.env.BASE_URL + 'geojson/IGP_1.geojson')
+        fetch(process.env.PUBLIC_URL + '/geojson/IGP_1.geojson')
             .then((res) => res.json())
             .then((data) => setGeoData(data));
     }, []);
