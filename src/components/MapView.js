@@ -13,7 +13,7 @@ const MapView = () => {
 
   // Crear ícono personalizado
   const customIcon = L.icon({
-    iconUrl: '/icons/l3.png', // Ruta desde la carpeta public
+    iconUrl: import.meta.env.BASE_URL + 'icons/l3.png', // Ruta desde la carpeta public
     iconSize: [25, 41],
     iconAnchor: [12, 41],
   });
@@ -28,7 +28,7 @@ const MapView = () => {
   const [geoData, setGeoData] = useState(null);
 
   useEffect(() => {
-    fetch('/geojson/IGP_1.geojson')
+    fetch(import.meta.env.BASE_URL + 'geojson/IGP_1.geojson')
       .then((response) => response.json())
       .then((data) => setGeoData(data))
       .catch((error) => console.error('Error al cargar GeoJSON:', error));
