@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rct_manu/static/css/main.0ef6772e.css",
+    "main.js": "/rct_manu/static/js/main.34933c0e.js",
+    "index.html": "/rct_manu/index.html",
+    "main.0ef6772e.css.map": "/rct_manu/static/css/main.0ef6772e.css.map",
+    "main.34933c0e.js.map": "/rct_manu/static/js/main.34933c0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ef6772e.css",
+    "static/js/main.34933c0e.js"
+  ]
+}
